@@ -1,7 +1,7 @@
 local M = {}
 
-M.test = function()
-	print("Hello from ns_sdf")
+function M.setup()
+	print("setup function")
 end
 
 return M
