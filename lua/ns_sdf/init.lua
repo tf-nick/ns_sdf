@@ -15,12 +15,13 @@ local function getCurrentDirectory()
 	return vim.fn.getcwd()
 end
 
--- Usage example
-local filename = getCurrentDirectory() .. "/" .. "project.json"
-if fileExists(filename) then
-	print("File exists:", filename)
-else
-	print("File does not exist:", filename)
+function M.checkFile()
+	local filename = getCurrentDirectory() .. "/" .. "project.json"
+	if fileExists(filename) then
+		print("File exists:", filename)
+	else
+		print("File does not exist:", filename)
+	end
 end
 
 return M
