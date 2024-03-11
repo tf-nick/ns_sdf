@@ -1,1 +1,3 @@
-command! sdfenv :lua require"ns_sdf".checkFile()
+local mymodule = require("ns_sdf")
+mymodule.checkFile()  
+
