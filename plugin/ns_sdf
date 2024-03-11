@@ -1,0 +1,1 @@
+command! sdfenv :lua require"ns_sdf".checkFile()
