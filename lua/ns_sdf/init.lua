@@ -33,7 +33,7 @@ function M.extractDefaultAuthId(filename)
 	-- Close the file
 	file:close()
 	-- Parse the content as JSON
-	local json = require("json")
+	local json = require("rapidjson")
 	local data = json.decode(content)
 	-- Extract the value associated with the "defaultAuthId" key
 	local defaultAuthId = data.defaultAuthId
